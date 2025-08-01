@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+     <script>
+    function checkPassword() {
+      var password = prompt("请输入密码：");
+      if (password === "e606c519-3db3-479e-8108-c2f207958668") {
+        document.getElementById("protected-content").style.display = "block";
+      } else {
+        alert("密码错误！");
+        window.location.href = "about:blank"; // 或者跳转到其他页面
+      }
+    }
+    window.onload = checkPassword;
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>免费在线视频搜索与观看平台</title>
