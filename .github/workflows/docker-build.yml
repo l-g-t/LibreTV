@@ -11,8 +11,9 @@ jobs:
   build:
     name: Build LibreTV image
     runs-on: ubuntu-latest
-    if: (github.event.workflow_run.conclusion == 'success' && github.repository == 'LibreSpark/LibreTV') || (github.repository == 'bestZwei/libretv')
-
+    if: (github.event.workflow_run.conclusion == 'success' && github.repository == 'l-g-t/LibreTV') || (github.repository == '828668/cooltv')
+    #if: (github.event.workflow_run.conclusion == 'success' && github.repository == 'LibreSpark/LibreTV') || (github.repository == 'bestZwei/libretv')
+    
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
